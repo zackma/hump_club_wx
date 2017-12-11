@@ -2,7 +2,7 @@
 <%@include file="/context/mytags.jsp"%>
 <html>
 <head>
-    <title>五华智慧城管</title>
+    <title>HUMP CLUB WX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
