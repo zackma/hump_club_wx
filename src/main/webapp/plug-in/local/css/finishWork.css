@@ -1,0 +1,98 @@
+.container{
+    padding-left:0;
+    padding-right:0;
+}
+.container .query-box{
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.container .query-box .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.container .query-box .row div{
+   padding-left: 0;
+    padding-right: 0;
+}
+.container .query-box .row div:nth-child(2),.container .query-box .row div:nth-child(3){
+    padding-left: 2px;
+}
+@media screen and (min-width: 414px){
+    .container .query-box .row div:nth-child(2),.container .query-box .row div:nth-child(3){
+        padding-left: 6px;
+    }
+}
+.container .query-box .form-group{
+    margin-bottom: 10px;
+}
+.container .query-box .form-group #startDate,.container .query-box .form-group #endDate{
+    background: url(../img/common/date.png) no-repeat 96% center #eee;
+}
+.container .query-box .form-group .input-query{
+    background: #eee;
+    height:32px;
+}
+.container .query-box .form-group .btn-query{
+    width: 100%;
+    background: #062D64;
+    border:none;
+    outline:none;
+}
+.container .query-box .form-group .btn-reset{
+    width: 100%;
+    border:none;
+    outline:none;
+}
+.container .case-header{
+    display: flex;
+    justify-content: space-between;
+    height:45px;
+    line-height: 45px;
+    background: #eee;
+    color: #878787;
+    font-size: 1.6rem;
+    padding:0 15px;
+
+}
+.container .case-box .case-header span:nth-child(1),.case-box .case-item .left{
+    width: 75%;
+}
+.container .case-box .case-header span:nth-child(2),.case-box .case-item .right{
+    width: 25%;
+}
+.case-panel .case-item{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    font-size: 1.6rem;
+    padding:0 15px;
+}
+.case-panel li:nth-child(n){
+    background: #EBF0FF;
+}
+.case-panel li:nth-child(2n){
+    background: #F5F5F5;
+}
+.case-panel .case-item h5{
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #000;
+
+}
+.case-panel .case-item p{
+    margin-bottom: 0;
+}
+.case-panel .case-item p button{
+    padding:1px 15px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.case-panel .case-item p time{
+    font-size: 1.4rem;
+    color: #454545;
+}

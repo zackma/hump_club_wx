@@ -1,0 +1,46 @@
+.type-show .new-title{
+    word-wrap: break-word;
+    word-break: break-all;
+    color:#222;
+    font-size: 18px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+}
+.type-show .link{
+    display: block;
+    padding:10px 0;
+    min-height: 70px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}
+.type-image-text .new-text{
+    display: inline-block;
+    width: 63%;
+    float:right;
+}
+.new-title a{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.type-image-text .new-text .new-time{
+    position: absolute;
+    bottom:10px;
+}
+.new-time{
+    color: #8c8c8c;
+    font-size:14px;
+}
+.type-image-text .new-img{
+    width:33%;
+    height:80px;
+    float:left;
+}
+.type-image-text .new-img img{
+    width: 100%;
+    height:100%;
+}

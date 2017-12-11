@@ -1,0 +1,215 @@
+.user-login{
+    position: fixed;
+    top: 5px;
+    right: 8px;
+    z-index: 1;
+}
+/*轮播控制按钮位置设置*/
+.carousel-indicators{
+    bottom:-10px;
+}
+.carousel-indicators li{
+    width: 8px;
+    height:8px;
+    border-radius:50%;
+    border:1px solid #104d7f;
+}
+.carousel-indicators .active{
+    width: 10px;
+    height:10px;
+    background: #104d7f;
+}
+.container{
+    padding-left:10px;
+    padding-right:10px;
+    margin-top: 20px;
+}
+.container section{
+    display: flex;
+    margin-bottom: 7px;
+    height: 113px;
+    justify-content: space-between;
+}
+.container section a{
+    color:#fff;
+}
+.container section .bs-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.container section .bs-describe{
+    font-size: 14px;
+}
+.container section .bs-xwdt{
+    width: 66%;
+}
+/*.container section .bs-xwdt .mask{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+}*/
+/*.container section .bs-xwdt .bs-title{
+    position: absolute;
+    bottom: 30px;
+    left:0;
+    margin: 0;
+}
+.container section .bs-xwdt .bs-describe{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+}*/
+.container section .bs-bszn{
+    background: #00b7ee;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container section .bs-bszn .bs-title,.container section .bs-ssp .bs-title{
+    margin: 8px 0 3px;
+}
+.container section .bs-ssp{
+    background: #00b7ee;
+    padding-top:13px;
+}
+.container section .bs-grzx{
+    width: 32%;
+    text-align: center;
+    background:#f39800;
+    padding-top:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container section .bs-grzx .bs-title{
+    margin-top: 8px;
+}
+.container section .bs-yjjb{
+    width: 66%;
+    text-align: center;
+    background:#d10010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container section .bs-yjjb .pr-content{
+    padding-left: 20px;
+    text-align: left;
+    width: 65%;
+}
+.container section .bs-xwdt{
+    display: flex;
+    justify-content:space-between;
+}
+.container section .bs-xwdt .pl-content{
+    width: 50%;
+    height:100%;
+}
+.container section .bs-xwdt .pr-content{
+    width: 50%;
+    height:100%;
+    padding-left:5px;
+    text-align: left;
+    background: #79ad0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container section .bs-xwdt .pr-content p{
+    margin-bottom: 0;
+}
+.container section .bs-zxzx{
+    background:#8fc31f;
+    padding-top: 18px;
+}
+.container .version-right{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #a7a7a7;
+}
+.container .version-right p{
+    margin-bottom:2px;
+}
+@media  screen and (min-width :320px){
+    /*.container section .bs-xwdt .bs-title {
+        bottom: 30px;
+        left:2px;
+    }
+    .container section .bs-xwdt .bs-describe {
+        line-height: 15px;
+        left: 2px;
+    }*/
+    .container section .bs-describe {
+        font-size: 12px;
+    }
+    .container section .bs-title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 375px){
+   /* .container section .bs-xwdt .bs-describe {
+        bottom: 15px;
+        left: 10px;
+        line-height: 15px;
+    }
+    .container section .bs-xwdt .bs-title {
+        bottom: 50px;
+        left: 10px;
+    }*/
+    .container section .bs-describe {
+        font-size: 14px;
+    }
+    .container section .bs-title {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 414px){
+    /*.container section .bs-xwdt .bs-describe {
+        bottom: 15px;
+        left: 10px;
+        line-height: 15px;
+    }
+    .container section .bs-xwdt .bs-title {
+        bottom: 35px;
+        left: 10px;
+    }*/
+}
+@media screen and (min-width: 768px){
+    .container section{
+        margin-bottom: 12px;
+        height: 233px;
+    }
+    .container section .bs-title{
+        font-size: 21px;
+    }
+    .container section .bs-describe {
+        font-size: 18px;
+    }
+    .container section .bs-yjjb img{
+        width: 90px;
+        height:90px;
+    }
+    .container section .bs-grzx img,.container section .bs-bszn img,.container section .bs-ssp img{
+        width: 63px;
+        height:62px;
+    }
+    /*.container section .bs-xwdt .bs-describe {
+        bottom: 20px;
+        left: 20px;
+    }
+    .container section .bs-xwdt .bs-title {
+        bottom: 50px;
+        left: 20px;
+    }*/
+    .container .version-right {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,193 @@
+body{
+    background: #F0F0F0;
+}
+.container{
+    padding-left: 0;
+    padding-right:0;
+}
+.container .user-info{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding:15px;
+}
+.container .person-info{
+    padding:0 15px!important;
+    justify-content: flex-start;
+}
+.container .user-info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .person-info .person-name{
+    margin-left: 15px;
+    color: #000;
+    font-size: 1.7rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.container .user-info .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 16px;
+    margin-left: 15px;
+    width: 58%;
+    height:100%
+}
+.container .user-info .name .real-name{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #000;
+    font-size: 1.7rem;
+}
+.container .user-info .name .nick-name{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #6B6B6B;
+    font-size: 1.6rem;
+}
+.container .user-info .info-left{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container .user-info .info-right{
+    width: 40%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #6B6B6B;
+    font-size: 1.6rem;
+}
+.container .user-info .info-right span{
+    text-align: right;
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.container .event-report{
+    margin-top: 10px;
+    background: #fff;
+}
+.event-report .nav-tabs{
+    border-bottom: 1px solid #F2F2F2;
+}
+.event-report .nav-tabs li{
+    width: 100%;
+    text-align: center;
+}
+.event-report .nav-tabs li a{
+    border: none;
+    font-size: 18px;
+    color: #011C57;
+    font-weight: bold;
+    padding:10px 5px;
+    margin-right: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: #B7C2D2;
+}
+.event-report .nav-tabs li a span{
+    font-size: 14px;
+    color:#6D6E6E;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+
+.work-box{
+    padding:0 40px;
+    margin-top: 15px;
+}
+.work-box .doing-work{
+    display: flex;
+    justify-content: space-between;
+}
+.work-box .doing-work .finished-work{
+    width: 48%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E0F6FF;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.12);
+}
+.work-box .doing-work .finished-work p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #019FE9;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.work-box .doing-work .report-work{
+    width: 48%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFE6C8;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.12);
+}
+.work-box .doing-work .report-work p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #FF4E01;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.work-box .will-work{
+    margin-top: 10px;
+    width: 100%;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.12);
+}
+.work-box .will-work p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #CDCDCD;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.work-box .exit-login .btn{
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background: #062D64;
+}
+@media screen and (min-width: 768px){
+    .work-box .doing-work .finished-work,.work-box .doing-work .report-work{
+        height:160px;
+    }
+    .work-box .doing-work .finished-work p,.work-box .doing-work .report-work p,.work-box .will-work p{
+       font-size: 2rem;
+    }
+    .work-box .will-work{
+        margin-top: 25px;
+        height:160px;
+    }
+    .work-box .exit-login .btn{
+        margin-top: 40px;
+        padding:12px;
+        font-size: 2rem;
+    }
+}

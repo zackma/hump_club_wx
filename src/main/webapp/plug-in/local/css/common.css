@@ -1,0 +1,179 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+a,a:active,a:visited,a:link{
+    text-decoration: none;
+}
+li{
+ list-style: none;
+}
+html,body{
+    font-family: "微软雅黑";
+    font-size: 10px;
+    overflow: auto;
+}
+/*消除弹窗滚动条隐藏*/
+.modal-open{
+    overflow: auto;
+}
+.p-top-50{
+    padding-top:50px;
+}
+.p-bottom-50{
+    padding-bottom: 50px;
+}
+.m-top-50{
+    margin-top: 50px;
+}
+.m-right-10{
+    margin-right:10px;
+}
+.m-top-0{
+    margin-top:0!important;
+}
+/*头部标题栏*/
+.bar-nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    background-color: #062d64;
+    background-image: url("../img/common/header.png");
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: right;
+    text-align: center;
+    color: #fff;
+    font-size:1.8rem;
+    z-index: 100;
+}
+.bar-nav .back{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    font-size:1.8rem;
+    height:50px;
+    width: 50px;
+    line-height: 50px;
+    left:0;
+    background: url("../img/common/back.png") no-repeat 20px center;
+
+}
+/*文本颜色*/
+.theme{
+    color:#062d64;
+}
+.danger{
+    color:#FE1111;
+}
+audio{
+    width: 100%;
+}
+
+/*底部导航*/
+.footer-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background:#062D64;
+    height:60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-nav a{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-nav  a span{
+    display:block;
+    margin-top: 5px;
+}
+
+/*
+状态文本颜色*/
+
+/*事件上报
+*!*/
+.text-sjsb{
+    color:#ef9822;
+}
+/*
+事件立案
+*/
+.text-sjla{
+    color:#3583c7;
+}
+/*
+案件核实
+*/
+.text-ajhs{
+    color:#ff7bac;
+}
+/*
+虚报事件
+*/
+.text-xbsj{
+    color:#737373
+}
+/*
+实报事件
+*/
+.text-sbsj{
+    color:#00479d;
+}
+/*
+处置中
+*/
+.text-czz{
+    color:#00a99d;
+}
+/*
+处置结束
+*/
+.text-czjs{
+    color:#662d91;
+}
+/*
+审核中
+*/
+.text-shz{
+    color: #d4145a;
+}
+/*
+审核未通过
+*/
+.text-shwtg{
+    color:#c1272d ;
+}
+/*
+审核通过
+*/
+.text-shtg{
+    color:#009c45;
+}
+/*
+案件结案
+*/
+.text-ajja{
+    color:#7dac27;
+}
+/*
+案件未通过
+*/
+.text-ajwtg{
+    color:#ff0000;
+}
+/*控制模态框字体大小*/
+.modal-title{
+    font-size: 15px;
+}
+.modal-body{
+    font-size: 14px;
+}

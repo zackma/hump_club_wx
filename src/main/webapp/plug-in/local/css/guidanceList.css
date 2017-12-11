@@ -1,0 +1,15 @@
+.container .handle-item{
+    height: 80px;
+    background: -webkit-linear-gradient(#F0F6FF, #C7DDF4);
+    border: 1px solid #015CB1;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.container .handle-item a{
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+}

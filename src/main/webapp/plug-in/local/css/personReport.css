@@ -1,0 +1,189 @@
+html,body{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.mask-loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 101;
+}
+.mask-loading .loading-inner{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    background: #fff;
+    top:50%;
+    margin-top: -30px;
+    left:50%;
+    margin-left: -50px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:6px;
+}
+.mask-loading .loading-inner i{
+    font-size: 28px;
+}
+.mask-loading .loading-inner p{
+    margin: 2px 0 0 0;
+    font-size: 12px;
+}
+.container{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+}
+.container .row{
+    padding-top:20px;
+    margin: 0;
+}
+.row .key{
+    padding:0;
+    font-size: 1.5rem;
+    color: #062d64;
+    text-align: right;
+}
+.row .val{
+    padding-left:10px;
+    padding-right:0;
+}
+.row b{
+    color: #ff0000;
+    font-size: 2rem;
+}
+.row .picture-box li{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.row .picture-box li:not(:nth-child(3n)){
+    margin-right: 10px;
+}
+.row .picture-box li img{
+    width: 100%;
+    height: 100%;
+}
+.row .picture-box li .close{
+    display:block;
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    background:#ff0000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 1!important;
+    padding-top:2px;
+}
+.row .picture-box li .close i{
+    font-size: 1.5rem;
+}
+.row .add-picture{
+    width: 80px;
+    height: 80px;
+    border:1px solid #cdcdcd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3rem;
+    color: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .val p{
+    font-size: 1.6rem;
+    color: #062d64;
+}
+.row .location{
+    padding:5px;
+    border:1px solid #cdcdcd;
+}
+.row .location .input-group-addon{
+    border:none;
+    background:#062d64;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 4px;
+}
+.row .location .form-control{
+    border:none;
+    box-shadow: none;
+}
+.row .location .form-control:focus{
+    box-shadow: none;
+}
+.row .val .input-group,.row .val button{
+    width: 100%;
+}
+.talk{
+    position: relative;
+    z-index: 10;
+}
+.talk .val{
+    position: relative;
+}
+.talk .val button{
+    background: #cdcdcd;
+    color: #fff;
+    height:40px;
+    font-size: 1.5rem;
+    outline: none;
+}
+.talk img{
+    position: absolute;
+    left:50%;
+    top:10px;
+    margin-left: -32px;
+    opacity: 0;
+}
+.row .val .close-talk{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff0000;
+    top: -6px;
+    right: -5px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top:2px;
+    display: none;
+}
+.row .val .close-talk i{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+.row .val .playBtn{
+    background:url("../img/personReport/play.png") no-repeat 15px center #062d64;
+    display: none;
+}
+.btn-sub{
+    width: 100%;
+    height:40px;
+    background:#062d64;
+    color:#fff;
+    font-size: 1.6rem;
+    letter-spacing: 10px;
+    outline:none;
+}
+.btn-sub:focus{
+    color: #fff;
+}
+.my-location{
+    width: 100%;
+    position: fixed;
+    top:50px;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+}

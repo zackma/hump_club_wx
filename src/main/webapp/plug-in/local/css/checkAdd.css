@@ -1,0 +1,187 @@
+.container{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+}
+.container .row{
+    padding-top:20px;
+    margin: 0;
+}
+.row .key{
+    padding:0;
+    font-size: 1.6rem;
+    color: #737373;
+    text-align: right;
+}
+.add-item .row .key{
+    color: #062d64;
+}
+.row b{
+    color: #ff0000;
+    font-size: 2rem;
+}
+.row .val{
+    padding-left:10px;
+    padding-right:0;
+    font-size: 1.6rem;
+}
+.row .process{
+    padding-left:50px;
+}
+.row .val p.voice{
+    margin-top: 10px;
+}
+.row .val p.voice button{
+    outline: none;
+    height:40px;
+    background:url("../img/personReportDetail/play.png") no-repeat 15px center #062d64;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.row .val p.loc i{
+    color: red;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+.row .picture-box li{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.row .picture-box li img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+.subclauses{
+    background:#062d64;
+    height:40px;
+    line-height: 40px;
+    color: #fff;
+    padding:0 10px;
+}
+.subclauses h5{
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.subclauses time{
+    font-size: 1.4rem;
+}
+.row .picture-box li{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.row .picture-box li img{
+    width: 100%;
+    height: 100%;
+}
+.row .picture-box li .close{
+    display:block;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    background:#ff0000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 1!important;
+    padding-top:2px;
+}
+.row .picture-box li .close i{
+    font-size: 1.5rem;
+}
+.row .add-picture{
+    width: 80px;
+    height: 80px;
+    border:1px solid #cdcdcd;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 3rem;
+    color: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .val .input-group,.row .val button{
+    width: 100%;
+}
+.talk{
+    position: relative;
+    z-index: 10;
+}
+.talk .val{
+    position: relative;
+}
+.talk .val button{
+    background: #cdcdcd;
+    color: #fff;
+    height:40px;
+    font-size: 1.5rem;
+    outline: none;
+}
+.talk img{
+    position: absolute;
+    left:50%;
+    top:10px;
+    margin-left: -32px;
+    opacity: 0;
+}
+.row .val .close-talk{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff0000;
+    top: -6px;
+    right: -5px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top:2px;
+    display: none;
+}
+.row .val .close-talk i{
+    font-size: 1.5rem;
+}
+.row .val .playBtn{
+    background:url("../img/personReport/play.png") no-repeat 20px center #062d64;
+    display: none;
+}
+.row .val .input-group{
+    margin-top: 2px;
+}
+.row .val .input-group select{
+    width: 80%;
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+    outline: none;
+}
+.btn-sub{
+    width: 100%;
+    height:40px;
+    background:#062d64;
+    color:#fff;
+    font-size: 1.8rem;
+    letter-spacing: 10px;
+    outline:none;
+}
+.btn-sub:focus{
+    color: #fff;
+}
+.my-location{
+    width: 100%;
+    position: fixed;
+    top:50px;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+}

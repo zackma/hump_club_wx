@@ -1,0 +1,114 @@
+.container{
+    padding-left:0;
+    padding-right:0;
+}
+.event-box li{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.event-box li:not(:last-child){
+    border-bottom:1px solid #cdcdcd;
+}
+.event-box li .des{
+    display: block;
+    width: 60%;
+}
+.event-box li .des p{
+    font-size: 1.6rem;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    color: #000;
+}
+.event-box li a.des time{
+    font-size: 1.4rem;
+    color:#000;
+}
+.event-box li .state a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.data-null p{
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.data-null a{
+    font-size: 1.6rem;
+}
+/*按钮颜色*/
+/*
+事件上报
+*/
+.btn-sjsb{
+    background:#ef9822;
+}
+/*
+事件立案
+*/
+.btn-sjla{
+    background:#3583c7;
+}
+/*
+案件核实
+*/
+.btn-ajhs{
+    background:#ff7bac;
+}
+/*
+虚报事件
+*/
+.btn-xbsj{
+    background:#737373
+}
+/*
+实报事件
+*/
+.btn-sbsj{
+    background:#00479d;
+}
+/*
+处置中
+*/
+.btn-czz{
+    background:#00a99d;
+}
+/*
+处置结束
+*/
+.btn-czjs{
+    background:#662d91;
+}
+/*
+审核中
+*/
+.btn-shz{
+    background: #d4145a;
+}
+/*
+审核未通过
+*/
+.btn-shwtg{
+    background:#c1272d ;
+}
+/*
+审核通过
+*/
+.btn-shtg{
+    background:#009c45;
+}
+/*
+案件结案
+*/
+.btn-ajja{
+    background:#7dac27;
+}
+/*
+案件未通过
+*/
+.btn-ajwtg{
+    background:#ff0000;
+}

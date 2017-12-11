@@ -1,0 +1,89 @@
+body{
+    background: url("../img/reward/head.png") no-repeat center 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+    margin-bottom: 0;
+}
+.red{
+    color: #FF013C;
+}
+.white{
+    color: #fff;
+}
+.red-bg{
+    background: #FF013C;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-16{
+    font-size:16px;
+}
+.container{
+    margin-top: 187px;
+}
+.container .row{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+.container .row .key,.container .row .val{
+    padding-left:0;
+    padding-right:0;
+}
+.container .notice{
+    margin-bottom: 5px;
+}
+.container .notice p{
+    text-indent: 30px;
+}
+.container .label{
+    padding: 8px 12px;
+    font-size: 16px;
+    margin: 10px 0;
+    display: inline-block;
+}
+.container .flow-path{
+    margin-left: 20px;
+}
+.container .flow-path ul li{
+    display: flex;
+    align-items: center;
+    height:72px;
+    background: url("../img/reward/out.png") no-repeat;
+    background-size:100% 100%;
+    padding-left:30px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.container .flow-path ul li:after{
+    content: '';
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background:#FF013C;
+    position: absolute;
+    top:50%;
+    left:-15px;
+    margin-top: -5px;
+}
+.container .flow-path ul li:not(:last-child):before{
+    content: '';
+    width: 4px;
+    height:75%;
+    background:#FF013C;
+    position: absolute;
+    top: 65%;
+    left: -12px;
+}
+.container .flow-path ul li p{
+    margin-left: 15px;
+}
+a:hover{
+    color: #fff!important;
+}
+a:active{
+    color: #fff!important;
+}

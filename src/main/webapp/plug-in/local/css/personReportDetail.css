@@ -1,0 +1,133 @@
+.container{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+.container .row{
+    padding-top:20px;
+    margin: 0;
+}
+.row .key{
+    padding:0;
+    font-size: 1.6rem;
+    color: #737373;
+    text-align: right;
+}
+.row .val{
+    padding-left:10px;
+    padding-right:0;
+    font-size: 1.6rem;
+}
+.row .process{
+    margin-top: 15px;
+    padding-left:50px;
+}
+.row .val p.voice{
+    margin-top: 10px;
+}
+.row .val p.voice button{
+    outline: none;
+    height:40px;
+    background:url("../img/personReportDetail/play.png") no-repeat 15px center #062d64;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.row .val p.loc i{
+    color: red;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+.row .picture-box li{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.row .picture-box li img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+.cut-line{
+    margin-top: 10px;
+    height: 1px;
+    background: #cdcdcd;
+}
+.row .val .state-point{
+    padding-left: 30px;
+    border-left: 2px solid #062d64;
+    position: relative;
+}
+.row .val .state-point:not(:last-child){
+    padding-bottom: 20px;
+}
+.row .val .state-point::after{
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    background:#062d64;
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    margin-top: -16px;
+    left:-6px;
+
+}
+.row .val .state-point:last-child::after{
+    margin-top: -7px;
+}
+.row .val .state-point .rim{
+    position:relative;
+    height: 58px;
+    margin-left: 30px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    padding-left: 10px;
+    border-right: 1px solid #cdcdcd;
+    border-radius: 0 10px 10px 0;
+}
+.row .val .state-point .rim:before{
+    position: absolute;
+    content:"";
+    width: 40px;
+    height: 1px;
+    background:#cdcdcd;
+    -webkit-transform:rotate(-45deg);
+    top:13px;
+    left:-33px;
+}
+.row .val .state-point .rim:after{
+    position: absolute;
+    content:"";
+    width: 40px;
+    height: 1px;
+    background:#cdcdcd;
+    -webkit-transform:rotate(45deg);
+    top:42px;
+    left:-34px;
+}
+.row .val .state-point p{
+    margin-bottom: 0;
+    padding:5px 0;
+    color: #062d64;
+}
+.row .val .state-point time{
+    font-size: 1.5rem;
+}
+.subclauses{
+    background:#062d64;
+    height:40px;
+    line-height: 40px;
+    color: #fff;
+    padding:0 10px;
+}
+.subclauses h5{
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.subclauses time{
+    font-size: 1.4rem;
+}

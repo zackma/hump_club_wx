@@ -1,0 +1,16 @@
+.news-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+}
+.news-content p{
+    font-size: 15px;
+    text-indent: 30px;
+}
+.m-top-30{
+    margin-top: 30px;
+}
+.news-content .address,.news-content .tell{
+    text-indent: 0;
+}
