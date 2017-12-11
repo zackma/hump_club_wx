@@ -1,5 +1,7 @@
 package com.hump.common.config;
 
+import com.hump.common.cotroller.WeixinApiController;
+import com.hump.common.cotroller.WeixinMsgController;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
@@ -34,7 +36,7 @@ public class WebConfig extends JFinalConfig {
 	public void configConstant(Constants me) {
 		// 加载少量必要配置，随后可用PropKit.get(...)获取值
 		loadProp("a_little_config_pro.txt", "a_little_config.txt");
-		me.setDevMode(PropKit.getBoolean("devMode", false));
+		me.setDevMode(PropKit.getBoolean("devMode", true));
 		me.setViewType(ViewType.JSP);
 		// ApiConfigKit 设为开发模式可以在开发阶段输出请求交互的 xml 与 json 数据
         ApiConfigKit.setDevMode(me.getDevMode());
@@ -46,6 +48,8 @@ public class WebConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		// 第三个参数为该Controller的视图存放路径
 		me.add("/", IndexController.class, "/view/index");			//默认首页
+		me.add("/msg", WeixinMsgController.class);
+		me.add("/api", WeixinApiController.class);
 	}
 	
 	/**
