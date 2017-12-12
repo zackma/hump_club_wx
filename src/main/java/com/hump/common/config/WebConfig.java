@@ -47,7 +47,7 @@ public class WebConfig extends JFinalConfig {
 	 */
 	public void configRoute(Routes me) {
 		// 第三个参数为该Controller的视图存放路径
-		me.add("/", IndexController.class, "/view/index");			//默认首页
+		me.add("/", IndexController.class, "/view");			//默认首页
 		me.add("/auth", AuthController.class);
 		me.add("/msg",MsgController.class);
 	}
