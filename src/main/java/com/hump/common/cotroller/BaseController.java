@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 
 /**
  * baseController
- * @author nays
+ * @author zackma
  *
  */
 public class BaseController extends Controller {

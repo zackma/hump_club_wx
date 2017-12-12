@@ -32,5 +32,13 @@ notify_mobile_test=13545191275
 
 #####业务逻辑中的华丽的分割线#########
 
+#免授权
+autoAuth=false
+
+#授权域名
+#zack本地1
+domain=http://7brjoav.hk1.mofasuidao.cn/
+#服务器
+#domain=http://hump.free.ngrok.cc/
 
 

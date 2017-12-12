@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 微信授权操作
  * 
- * @author nays
+ * @author zackma
  *
  */
 public class AuthController extends Controller {

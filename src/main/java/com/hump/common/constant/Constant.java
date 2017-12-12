@@ -1,7 +1,7 @@
 package com.hump.common.constant;
 /**
  * 常量类
- * @author nays
+ * @author zackma
  *
  */
 public class Constant {
