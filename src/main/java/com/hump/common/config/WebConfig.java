@@ -1,7 +1,6 @@
 package com.hump.common.config;
 
-import com.hump.common.cotroller.WeixinApiController;
-import com.hump.common.cotroller.WeixinMsgController;
+import com.hump.common.cotroller.MsgController;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
@@ -48,8 +47,7 @@ public class WebConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		// 第三个参数为该Controller的视图存放路径
 		me.add("/", IndexController.class, "/view/index");			//默认首页
-		me.add("/msg", WeixinMsgController.class);
-		me.add("/api", WeixinApiController.class);
+		me.add("/msg",MsgController.class);
 	}
 	
 	/**
