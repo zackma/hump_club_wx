@@ -2,6 +2,7 @@ package com.hump.common.config;
 
 import com.hump.common.cotroller.AuthController;
 import com.hump.common.cotroller.MsgController;
+import com.hump.controller.menu.MenuController;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
@@ -49,6 +50,7 @@ public class WebConfig extends JFinalConfig {
 		// 第三个参数为该Controller的视图存放路径
 		me.add("/", IndexController.class, "/view");			//默认首页
 		me.add("/auth", AuthController.class);
+		me.add("/menu",MenuController.class);
 		me.add("/msg",MsgController.class);
 	}
 	
@@ -93,6 +95,20 @@ public class WebConfig extends JFinalConfig {
        * 多个公众号时，重复调用ApiConfigKit.putApiConfig(ac)依次添加即可，第一个添加的是默认。
        */
       ApiConfigKit.putApiConfig(ac);
+
+	  /**
+	   * 应用启动时重新初始化公众号菜单
+	   */
+	  try {
+		  MenuController mc = MenuController.class.newInstance();
+		  mc.deleteMenu();
+		  mc.createMenu();
+		  mc.getMenu();
+	  } catch (InstantiationException e) {
+		  e.printStackTrace();
+	  } catch (IllegalAccessException e) {
+		e.printStackTrace();
+	  }
       
       /**
        * 1.9 新增LocalTestTokenCache用于本地和线上同时使用一套appId时避免本地将线上AccessToken冲掉

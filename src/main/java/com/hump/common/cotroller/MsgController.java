@@ -1,5 +1,7 @@
 package com.hump.common.cotroller;
 
+import com.hump.service.fans.FansService;
+import com.jfinal.aop.Duang;
 import com.jfinal.weixin.sdk.api.ApiResult;
 import com.jfinal.weixin.sdk.api.UserApi;
 import com.jfinal.weixin.sdk.jfinal.MsgControllerAdapter;
@@ -30,10 +32,14 @@ public class MsgController extends MsgControllerAdapter{
             String openId = inFollowEvent.getFromUserName();
             ApiResult apiResult = UserApi.getUserInfo(openId);
             String wxUserStr = apiResult.getJson();
+            FansService service = Duang.duang(FansService.class);
+            service.insertFans(wxUserStr);
         }
         //取消关注
         if(inFollowEvent.EVENT_INFOLLOW_UNSUBSCRIBE.equals(inFollowEvent.getEvent())){
             String openid = inFollowEvent.getFromUserName();
+            FansService service = Duang.duang(FansService.class);
+            service.removeFans(openid);
         }
     }
 

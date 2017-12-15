@@ -3,8 +3,6 @@ package com.hump.controller.index;
 import com.hump.common.cotroller.BaseController;
 import com.hump.common.interceptor.AuthInterceptor;
 import com.jfinal.aop.Before;
-import com.jfinal.aop.Clear;
-import com.jfinal.aop.Invocation;
 
 /**
  * 首页
