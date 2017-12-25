@@ -2,6 +2,7 @@ package com.hump.common.config;
 
 import com.hump.common.cotroller.AuthController;
 import com.hump.common.cotroller.MsgController;
+import com.hump.controller.index.WeuiDemoController;
 import com.hump.controller.menu.MenuController;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
@@ -49,6 +50,7 @@ public class WebConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		// 第三个参数为该Controller的视图存放路径
 		me.add("/", IndexController.class, "/view");			//默认首页
+		me.add("/weui", WeuiDemoController.class,"/weui/demos");//WEUI DEMO控制器
 		me.add("/auth", AuthController.class);
 		me.add("/menu",MenuController.class);
 		me.add("/msg",MsgController.class);
